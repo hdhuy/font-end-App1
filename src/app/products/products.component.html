@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[<device-width>], initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card" style="width: 18rem;">
+        <img [src]="user.linkImage" class="card-img-top" [alt]="'Hoc vien fpt'">
+        <div class="card-body">
+            <h5 class="card-title">{{title}}</h5>
+            <ul>
+                <li>Ten:{{user.name}}</li>
+                <li>Tuoi: {{user.age}}</li>
+                <li>Hon nhan: {{user.isMaried?'Da co gia dinh':'Chua co gia dinh'}}</li>
+            </ul>
+            <input type="text" (keyup)="handleKeyup($event)" class="form-control m-3">
+        </div>
+
+    </div>
+</body>
+</html>
